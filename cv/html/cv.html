@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--***** DEFINITION DES PARAMÈTRES GÉNÉRAUX DE LA PAGE *****-->
+
+<head>
+	<meta charset="utf-8"/>
+	<title>CV Vincent Harendarczyk</title>
+	<!-- Importation de la police Roboto à partir de Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
+	<!-- Intégration du code CSS propre à la page -->
+	<link rel="stylesheet" href="../css/cv.css">						
+	<!-- Intégration du code CSS commun à toutes les pages -->		
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- Intégration du code JavaScript nécessaire au menu -->		
+	<script src="../js/menu.js"></script>
+	<!-- Intégration d'une favicon -->		
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png" />		
+	
+</head>
+	
+<!--***** ********************************************* *****-->
+	
+	
+<!--***** DEFINITION DU CONTENU VISIBLE DE LA PAGE *****-->	
+	
+<body>
+
+	<!--**** Flexbox permettant d'afficher les différentes parties de la page côte à côte ****-->
+	
+	<div class="page">
+		
+		<!--*** Partie gauche commune à toutes les pages pour les illustrer ***-->
+	
+		<div class="ornements">
+	
+			<!-- Menu de navigation entre les pages du site -->
+	
+			<div class="menu">
+				
+				<!-- Logo du menu -->
+				<img onclick="deroulementMenu()" id="roue" src="../images/menu.svg" alt="Menu" class="image">	
+				
+				<!-- Liste du menu -->
+				<div id="bouton" class="liste_menu">
+					<a href="../html/cv.html">CV</a>
+					<a href="../html/portfolio.html">Portfolio</a>
+				</div>
+				
+			</div>
+							
+			<!-- Titre de la page en vertical -->
+		
+			<div class="titre_page">
+				<p>Curriculum vitae</p>
+			</div>
+					
+		<!--*** *****************Fin de la div "ornements"***************** ***-->					
+		</div>		
+		
+		<!--*** Cadre blanc où se trouvent toutes les infos du CV ***-->
+	
+		<div class="cadre">
+		
+			<!-- Entête flexbox contenant mes informations et ma photo alignée horizontalement -->
+		
+			<div class="entete">
+		
+				<!-- Informations nécessaire pour m'identifier et me contacter -->
+			
+				<div class="bio">
+				
+					<div class="nom">HARENDARCZYK Vincent</div>
+					
+					<div class="infos" >
+						<br>
+						02/06/1999<br>
+						54 avenue Georges Clémenceau<br>
+						59300 Valenciennes<br>
+						<!-- mailto: propriété proposant d'ouvrir une page d'écriture de mail -->
+						<a href="mailto:vincent.harendarczyk@gmail.com">vincent.harendarczyk@gmail.com</a><br>	
+						+33 7 67 34 94 33<br>
+					</div>
+					
+				</div>
+				
+				<!-- Statut professionnel actuel -->
+				
+				<!-- align-self: flex-end : nécessaire pour que la div soit positionnée en bas de l'entête -->
+				<div class="statut" style="align-self: flex-end">
+					Étudiant en audiovisuel<br>
+					<a href="https://www.youtube.com/playlist?list=PL9x-OTrmoXdiNbRxL_o4OsoL2CNggPPjc">Portfolio</a>
+				</div>
+				
+				<!-- Photo encadrée -->
+				
+				<!-- Si l'image ne charge pas, il sera écrit "Vincent" à la place -->
+				<div class="photo"> <img src="../images/photo.png" alt="Vincent"> </div> 
+				
+			<!-- Fin de la div "entete" -->	
+			</div>
+			
+			<!-- Contenu réel du CV en colonne -->
+			
+			<div class="cv">
+			
+				<!-- Flexbox pour positionner correctement le crochet -->
+			
+				<div class="flexbox-illustration">
+			
+					<!-- Format SVG pour éviter la pixelisation en cas d'homothétie -->
+					<img src="../images/crochet.svg">
+			
+					<div class="categorie">
+						
+						<div class="sous-titre">
+							Expérience professionnelle
+						</div>
+						
+						<div class="contenu">
+						
+							<ul>	<!-- Définition d'une liste non ordonnée à puces -->
+								<li>Juillet 2017</li>
+									<p>Le Fresnoy - Pôle son - Stage</p>
+								<li>Octobre 2017</li>
+									<p>Festival du Cinéma International en Abitibi-Témiscamingue - Design sonore de capsules vidéos</p>
+								<li>Mai à juillet 2018</li>
+									<p>Rencontres Audiovisuelles - Loom Prod - Stage</p>
+								<!-- Logo de RAMDAM qui mène à son site -->
+								<a href="https://www.ramdam.fm"><img src="../images/RAMDAM_LOGO.svg" alt="RAMDAM"></a>	
+								<li>Depuis septembre 2018</li>
+									<p>Ramdam - Radio étudiante de Valenciennes - Responsable événementiel</p> 
+							</ul>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="flexbox-illustration">
+			
+					<img src="../images/crochet.svg">
+				
+					<div class="categorie">
+						
+						<div class="sous-titre">
+							Formation
+						</div>
+						
+						<div class="contenu">
+							
+							<ul>
+								<li>2016</li>
+									<p>Baccalauréat S mentions européenne et très bien</p>
+								<!-- Logo de DREAM qui mène à sa page sur le site de l'UPHF -->
+								<a href="https://www.uphf.fr/ISTV/dream-formation"><img src="../images/DREAM.jpg" alt="DREAM"></a>	
+								<li>2016-2017</li>
+									<p>DREAM - Licence 1 Science et Technique parcours type Audiovisuel et médias numériques</p>
+								<!-- Logo de l'UQAT qui mène à son site -->
+								<a href="https://uqat.ca"><img src="../images/UQAT.png" alt="UQAT"></a>								
+								<li>2017-2018</li>
+									<p>UQAT - 2e année du Baccalauréat en Création Numérique</p>
+								<li>2018-2019 (en cours)</li>
+									<p>DREAM - Licence 3 Science et Technique parcours type Audiovisuel et médias numériques</p>
+							</ul>
+							
+						</div>
+						
+					</div>
+				
+				</div>
+								
+				<div class="flexbox-illustration">
+			
+					<img src="../images/crochet.svg">
+					
+					<div class="categorie">
+						
+						<div class="sous-titre">
+							Compétences
+						</div>
+						
+						<div class="contenu">
+							
+							<ul>
+								<li>Bureautique et informatique</li>
+									<p>Bases en C, C++, Scala et suite Microsoft Office</p>
+								<li>Son</li>
+									<p>Prise de son, mixage son (Stéréo, 5.1), sonorisation (conférence, émission radio)</p>
+									<p>AVID ProTools, Adobe Audition, FL Studio, iZotope RX 4 à 7</p>
+								<li>Image</li>
+									<p>AVID Media Composer, Adobe Premiere Pro, Photoshop, Illustrator et After Effects</p>
+								<li>Scénarisation cinématographique</li>
+							</ul>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="flexbox-illustration">
+			
+					<img src="../images/crochet.svg">	
+					
+					<div class="categorie">
+						
+						<div class="sous-titre">
+							Langues
+						</div>
+						
+						<div class="contenu">
+							
+							<ul>
+								<li>Anglais</li>
+								<p>	Parlé couramment - B2 - Certification CLES2</p>
+								<li>Espagnol</li>
+								<p>	Parlé occasionnellement - Niveau Bac LV2 (A2)</p>
+								<li>Japonais</li>
+								<p>	Parlé occasionnellement - Niveau Bac LV3 (A2)</p>
+							</ul>
+						
+						</div>
+						
+					</div>
+				
+				</div>
+				
+				<div class="flexbox-illustration">
+			
+					<img src="../images/crochet.svg">
+					
+					<div class="categorie">
+						
+						<div class="sous-titre">
+							Centres d'intérêt
+						</div>
+						
+						<div class="contenu">
+							
+							<ul>
+								<li>Musique - Design sonore - Cinéma - Événementiel - Programmation - Animation 2D - Jeux Vidéo</li>
+							</ul>
+							
+						</div>
+					
+					</div>
+					
+				</div>
+				
+			<!-- Fin de la div "cv" -->	
+			</div>
+			
+		<!--*** **************Fin de la div "cadre"************** ***-->
+		</div>
+		
+	<!--**** *************************** Fin de la div "page" *************************** ****-->
+	</div>
+	
+<!--***** Fin de la partie visible de la page web *****-->
+</body>
+	
+</html>

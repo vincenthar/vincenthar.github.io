@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+<!--***** DEFINITION DES PARAMÈTRES GÉNÉRAUX DE LA PAGE *****-->
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Portfolio Vincent Harendarczyk</title>
+	<!-- Importation de la police Roboto à partir de Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
+	<!-- Intégration du code CSS propre à la page -->
+	<link rel="stylesheet" href="../css/portfolio.css">			
+	<!-- Intégration du code CSS commun à toutes les pages -->
+	<link rel="stylesheet" href="../css/general.css">					
+	<!-- Intégration du code JavaScript nécessaire au menu -->
+	<script src="../js/menu.js"></script>								
+	<!-- Intégration d'une favicon -->		
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png" />		
+	
+</head>
+
+<!--***** ********************************************* *****-->
+
+
+<!--***** DEFINITION DU CONTENU VISIBLE DE LA PAGE *****-->	
+
+<body>
+
+	<!--**** Flexbox permettant d'afficher les différentes parties de la page côte à côte ****-->
+	
+	<div class="page">		
+	
+		<!--*** Partie gauche commune à toutes les pages pour les illustrer ***-->
+	
+		<div class="ornements">
+	
+			<!-- Menu de navigation entre les pages du site -->
+	
+			<div class="menu">
+				
+				<!-- Logo du menu -->
+				<img onclick="deroulementMenu()" id="roue" src="../images/menu.svg" alt="Menu" class="image">	
+				
+				<!-- Liste du menu -->	
+				<div id="bouton" class="liste_menu">
+					<a href="../html/cv.html">CV</a>
+					<a href="../html/portfolio.html">Portfolio</a>
+				</div>
+				
+			</div>
+							
+			<!-- Titre de la page en vertical -->
+		
+			<div class="titre_page">
+				<p>Portfolio</p>
+			</div>
+					
+		<!--*** *****************Fin de la div "ornements"***************** ***-->			
+		</div>
+		
+		<!--*** Cadre blanc où se trouvent le contenu du portfolio***-->
+	
+		<div class="cadre">
+		
+			<!-- Entête copiée de la page CV sans la photo et le statut actuel -->
+		
+			<div class="entete">
+			
+				<div class="bio">
+					<div class="nom">Portfolio</div>									
+				</div>
+				
+			<!-- Fin de la div "entete" -->			
+			</div>
+			
+			<!-- Contenu réel du portfolio sous forme de deux colonnes en ordre antéchronologique -->
+			
+			<div class="grille">
+			
+				<div class="video">
+									
+					<img src="../images/TalkSick_Titre.png">
+					
+					<p class="titre">TalkSick</p>
+					<p class="type">Pièce de théâtre - En cours - 2019</p>					
+					<p class="fonctions">Design sonore, prise de son, montage son</p>
+				
+				</div>
+				
+				<div class="video">			
+					
+					<!-- Intégration vidéo HTML5 -->
+					<video controls>
+						<source src="../videos/HELLEBORE.mp4" type="video/mp4">
+					</video>
+					
+					<p class="titre">Hellébore</p>
+					<p class="type">Court-métrage - 2019</p>
+					<p class="fonctions">Design sonore, prise de son, montage son, mixage stéréo</p>
+				
+				</div>
+			
+				<div class="video">
+					
+					<!-- Intégration vidéo YouTube -->
+					<iframe src="https://www.youtube.com/embed/A0f3gmdIteY"
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>						
+					
+					<p class="titre">Passe-passe</p>
+					<p class="type">Court-métrage - 2018</p>
+					<p class="fonctions">Réalisation, direction artistique, colorimétrie</p>
+					
+					<ul class="distinctions">
+						<li>Trois Quarts de Semaine 2018</li>
+					</ul>
+				
+				</div>
+			
+				<div class="video">
+					
+					<!-- Intégration vidéo Vimeo -->
+					<iframe src="https://player.vimeo.com/video/290874914" 
+						frameborder="0" allowfullscreen>
+					</iframe>						
+					
+					<p class="titre">Le poulailler</p>
+					<p class="type">Video mapping monumental - 2018</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo</p>
+				
+				</div>
+			
+				<div class="video">
+									
+					<iframe src="https://player.vimeo.com/video/290875798" 
+						frameborder="0" allowfullscreen>
+					</iframe>
+					
+					<p class="titre">L'arbre</p>
+					<p class="type">Video mapping sur végétaux - 2018</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo</p>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://player.vimeo.com/video/285309664" 
+						frameborder="0" allowfullscreen>
+					</iframe>						
+					
+					<p class="titre">Les jardins</p>
+					<p class="type">Video mapping sur végétaux - 2018</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo</p>
+																
+				</div>
+			
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/BTUXw5ULEz8" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+					
+					<p class="titre">Les yeux ne disent pas tout</p>
+					<p class="type">Court-métrage - 2018</p>
+					<p class="fonctions">Sound design, prise de son, montage son, mixage stéréo & 5.1</p>
+					
+					<ul class="distinctions">
+						<li>Sélection Festival du Filministe</li>
+						<li>Sélection Meilleurs court-métrages de l'année 2017-2018 à l'UQAT par Aude Weber-Houde</li>
+					</ul>
+									
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/RFdvbRsfRsI" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+					
+					<p class="titre">Une de plus</p>
+					<p class="type">Court-métrage - 2018</p>
+					<p class="fonctions">Direction de la photographie, étalonnage, colorimétrie
+						, effets spéciaux, sound design, montage son, mixage stéréo
+					</p>
+					
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/k_fjV0sVin8" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+				
+					<p class="titre">BIG MA</p>
+					<p class="type">Court-métrage - 2018</p>
+					<p class="fonctions">Sound design, prise de son, montage son, mixage stéréo, réalisation</p>
+					
+					<ul class="distinctions">
+						<li>Cabaret de création cinématographique 2018 - Rouyn-Noranda</li>
+						<li>Festival du Documenteur 2018 - Rouyn-Noranda</li>
+					</ul>
+										
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/zERZvBoE770" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>					
+					
+					<p class="titre">Ländliche Tänze</p>
+					<p class="type">Animation 2D - 2018</p>
+					<p class="fonctions">Design graphique, animation 2D</p>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/2ypOVS0Xpvc"
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+				
+					<p class="titre">Lieux Inopportuns</p>
+					<p class="type">Court-métrage - 2017</p>
+					<p class="fonctions">Sound design, prise de son, montage son, mixage stéréo</p> 
+					
+					<ul class="distinctions">
+						<li>Prix du public à la projection finale du cours CIN1205 Montage : théorie et pratique de Aude Weber-Houde</li>
+						<li>Sélection Meilleurs court-métrages de l'année 2017-2018 à l'UQAT par Aude Weber-Houde</li>
+					</ul>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/EIEwqs8Nbv8" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+				
+					<p class="titre">Carnage sur le tournage</p>
+					<p class="type">Court-métrage - 2017</p>
+					<p class="fonctions">Prise de son, montage son, mixage stéréo, acteur, colorimétrie</p>
+					
+					<ul class="distinctions">
+						<li>Trois Quarts de Semaine 2017</li>
+					</ul>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://player.vimeo.com/video/255968576" 
+						frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+					</iframe>
+					
+					<p class="titre">Boomtown Théâtres - Le cinéma et les incendies</p>
+					<p class="type">Capsule vidéo - 2017</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo</p>
+					
+					<ul class="distinctions">
+						<li>Festival du Cinéma International en Abitibi-Témiscamingue (FCIAT) 2017</li>
+					</ul>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://player.vimeo.com/video/255058518" 
+						frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+					</iframe>
+					
+					<p class="titre">Boomtown Théâtres - Le cinéma et la formation</p>
+					<p class="type">Capsule vidéo - 2017</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo</p>
+					
+					<ul class="distinctions">
+						<li>Festival du Cinéma International en Abitibi-Témiscamingue (FCIAT) 2017</li>
+					</ul>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://player.vimeo.com/video/254727123" 
+						frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+					</iframe>
+					
+					<p class="titre">Boomtown Théâtres - Le cinéma et la sexualité</p>
+					<p class="type">Capsule vidéo - 2017</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo</p>
+					
+					<ul class="distinctions">
+						<li>Festival du Cinéma International en Abitibi-Témiscamingue (FCIAT) 2017</li>
+					</ul>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://player.vimeo.com/video/254724618" 
+						frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+					</iframe>
+				
+					<p class="titre">Boomtown Théâtres - Le cinéma et la religion</p>
+					<p class="type">Capsule vidéo - 2017</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo</p>
+					
+					<ul class="distinctions">
+						<li>Festival du Cinéma International en Abitibi-Témiscamingue (FCIAT) 2017</li>
+					</ul>
+				
+				</div>
+				
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/e5iT03DqATE" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+				
+					<p class="titre">FOG</p>
+					<p class="type">Court-métrage d'animation - 2017</p>
+					<p class="fonctions">Sound design, montage son, mixage stéréo & 5.1</p>
+					
+					<ul class="distinctions">
+						<li>Réalisé lors d'un stage au pôle Son du Fresnoy</li>
+					</ul>
+				
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/raFJ4fk6B1A" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+				
+					<p class="titre">Rendez-vous rue Carpeaux</p>
+					<p class="type">Court-métrage - 2017</p>
+					<p class="fonctions">Chef opérateur, montage son, mixage stéréo</p>
+					
+					<ul class="distinctions">
+						<li>Trois Quarts de Cinéma 2017</li>
+					</ul>
+					
+				</div>
+				
+				<div class="video">
+				
+					<iframe src="https://www.youtube.com/embed/XdykFJ4EIKo" 
+						frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen>
+					</iframe>
+				
+					<p class="titre">Les Résistants</p>
+					<p class="type">Court-métrage - 2016</p>
+					<p class="fonctions">Montage son, mixage stéréo</p>
+					
+					<ul class="distinctions">
+						<li>Trois Quarts de Semaine 2016</li>
+					</ul>
+				
+				</div>
+									
+			<!-- Fin de la div "grille" -->	
+			</div>
+			
+		<!--*** **************Fin de la div "cadre"************** ***-->
+		</div>
+		
+	<!--**** *************************** Fin de la div "page" *************************** ****-->			
+	</div>
+	
+<!--***** Fin de la partie visible de la page web *****-->
+</body>
+	
+</html>

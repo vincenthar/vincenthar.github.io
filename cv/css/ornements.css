@@ -1,0 +1,160 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+body 
+{
+	background-color: #4472C4;
+}
+
+a
+{
+	color: #8FAADC;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #1F3864;	
+}
+
+.page 
+{
+	display: flex;
+	justify-content: center;
+}
+
+.ornements
+{
+	display: flex;
+	flex-direction: column;
+	width: 19%;
+}
+
+.menu
+{
+	max-width: 75%; 
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	margin-right: 1%;
+	/* position: relative; */
+	/* display: inline-block; */
+	/* box-sizing: border-box; */
+	cursor: pointer;
+	position: relative;
+	left: 25%;
+}
+
+.menu img
+{
+	width: 50%;
+	height: auto;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+}
+
+.image:hover
+{
+	transform: rotate(45deg);
+}
+
+.spin
+{
+	transform: rotate(1125deg);
+}
+
+@keyframes deroulement
+{
+	from { transform: scale(1, 0); transform-origin: top center; }
+	to { transform: scale(1, 1); transform-origin: top center; }
+}
+
+@keyframes enroulement
+{
+	from { transform: scale(1, 1); transform-origin: top center; }
+	to { transform: scale(1, 0); transform-origin: top center; }
+}
+
+.liste_menu
+{
+	width: 75%;
+	height: auto;
+	text-align: center;
+	margin-top: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #1F3864;
+	box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	position: relative;
+	right: 10%;
+	transform: scale(1, 0);
+}
+
+.liste_menu a
+{
+	color: black;
+	background-color: #8FAADC;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1.8;
+	font-size: 1.7em;
+}
+
+.liste_menu a:hover
+{
+	color: #8FAADC;
+	background-color: #1F3864;
+}
+
+.show
+{
+	display: block;
+	animation-name: deroulement;
+	animation-duration: 0.25s;
+	transform: scale(1, 1);
+}
+
+.hide
+{	
+	display: block;
+	animation-name: enroulement;
+	animation-duration: 0.25s;
+	transform: scale(1, 0);
+}
+
+.curriculum
+{
+	/* height: auto; */
+	/* box-sizing: border-box; */
+	color: #1F3864;
+	/* max-height: 350%; */
+	font-size: 5em;
+	letter-spacing: 2vh;
+	white-space: normal;
+	margin: 0% auto 0;
+	text-transform: uppercase;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+
+.curriculum p
+{
+	height: 100%;
+}
+
+.cadre
+{
+	background-color: #FFFFFF;
+	margin-right: auto;
+	/* margin-left: 11%; */
+	width: 62.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.25); /*déplacement horizontal, déplacement vertical, flou, taille, couleur*/
+}

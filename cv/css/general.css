@@ -1,0 +1,191 @@
+﻿/***********************************************/
+/****************** GENERAL ********************/
+/***********************************************/
+
+*	/* définition de la police générale et initialisation de la largeur de la page */
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body	/* définition de la couleur de fond de la page */ 
+{
+	background-color: #4472C4;
+}
+
+a	/* définition de l'aspect des liens */
+{
+	color: #8FAADC;
+	text-decoration: none;
+}
+
+a:visited	/* définition de l'aspect des liens déjà visités */
+{
+	color: #1F3864;	
+}
+
+.page	/* définition de la méthode d'affichage (flexbox) de la page */ 		 
+{
+	display: flex;
+	justify-content: center;
+}
+
+/***********************************************/
+/***************** ORNEMENTS *******************/
+/***********************************************/
+
+.ornements	/* définition de la taille et de la position de la bande latérale gauche */
+{
+	display: flex;
+	flex-direction: column;
+	width: 19%;
+}
+
+.menu	/* définition de l'emplacement du logo et de l'aspect du menu */
+{
+	max-width: 75%; 
+	margin: 5% 1% 1% 5%;	/*top right bottom left*/
+	cursor: pointer;
+	position: relative;
+	left: 25%;
+}
+
+.menu img	/* définition de la taille et du la vitesse d'animation du logo */
+{
+	width: 50%;
+	height: auto;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+}
+
+.image:hover	/* définition de l'animation du logo au survol */
+{
+	transform: rotate(45deg);
+}
+
+.spin		/* définition de l'animation du logo au clic */
+{
+	transform: rotate(1125deg);
+}
+
+	/* définition des animations d'affichage du menu */
+
+@keyframes deroulement
+{
+	from { transform: scale(1, 0); transform-origin: top center; }
+	to { transform: scale(1, 1); transform-origin: top center; }
+}
+
+@keyframes enroulement
+{
+	from { transform: scale(1, 1); transform-origin: top center; }
+	to { transform: scale(1, 0); transform-origin: top center; }
+}
+
+	/************ fin animations du menu *************/
+
+
+.liste_menu		/* définition de l'aspect, taille,*/
+{
+	width: 75%;
+	height: auto;
+	text-align: center;
+	margin-top: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #1F3864;
+	/*déplacement horizontal, déplacement vertical, flou, taille, couleur*/
+	box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);	
+	border-radius: 15px;
+	position: relative;
+	right: 10%;
+	transform: scale(1, 0);	/* le menu est caché à la base */
+}
+
+.liste_menu a		/* définition de l'aspect basique du texte-lien du menu */
+{
+	color: black;
+	background-color: #8FAADC;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1.8;
+	font-size: 1.7em;
+}
+
+.liste_menu a:hover	/* définition de l'aspect au survol du texte-lien du menu */
+{
+	color: #8FAADC;
+	background-color: #1F3864;
+}
+
+.show		/* définition des actions à effectuer lorsque l'on doit afficher le menu */	
+{
+	display: block;
+	animation-name: deroulement;
+	animation-duration: 0.25s;
+	transform: scale(1, 1); /* pour que le menu reste affiché à la fin de l'animation */
+}
+
+.hide		/* définition des actions à effectuer l'on doit cacher le menu */
+{	
+	display: block;
+	animation-name: enroulement;
+	animation-duration: 0.25s;
+	transform: scale(1, 0);	/* pour que le menu reste caché à la fin de l'animation */
+}
+
+.titre_page		/* définition de l'aspect du titre vertical de la page */
+{
+	color: #1F3864;
+	font-size: 5em;
+	letter-spacing: 2vh;
+	white-space: normal;
+	margin: 0% auto 0% auto;	/*top right bottom left*/
+	text-transform: uppercase;
+	writing-mode: vertical-lr;	/* afficher le texte en vertical */
+	transform: rotate(180deg);	/* tourner le texte pour qu'il soit lu de bas en haut */
+}
+
+
+/***********************************************/
+/******************* PAGE **********************/
+/***********************************************/
+
+.cadre		/* définition de l'aspect du cadre blanc de la page */
+{
+	background-color: #FFFFFF;
+	margin-right: auto;
+	width: 62.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	/*déplacement horizontal, déplacement vertical, flou, taille, couleur*/
+	box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.25); 
+}
+
+.entete		/* définition de l'aspect et de l'affichage de l'entête */
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: #FFFFFF;
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+
+.bio		/* définition de l'aspect de la div contenant le nom dans l'entête */
+{
+	color: #1F3864;
+	background-color: #4472C4;
+	text-align: right;
+	padding: 1%;
+	width: 35%;
+	word-wrap: break-word;	/* couper seulement entre les mots si la page devient trop petite */
+	/*déplacement horizontal, déplacement vertical, flou, taille, couleur*/
+	text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);	
+}
+
+.nom		/* définition de l'aspect du nom dans l'entête */
+{
+	font-size: 2em;
+	font-weight: bold;
+}

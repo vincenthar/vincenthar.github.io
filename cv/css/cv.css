@@ -1,0 +1,134 @@
+/***********************************************/
+/****************** ENTÊTE *********************/
+/***********************************************/
+
+.infos	
+{
+	margin-right: 10%;
+}
+
+.statut	/* disposer le texte sur la partie droite de la div "statut" */
+{
+	text-align: right;
+}
+
+.photo	/* définition de l'aspect de la div contenant la photo */
+{
+	z-index: 2;
+	width: 9vw;
+	height: 9vw;
+	border: 10px solid;
+	/* intégration d'une bordure spéciale issue du CV papier */
+	border-image: url(../images/bordure.svg) 10;	
+	margin-right: 5%;
+	/* pour que ça reste en place au chargement de la page */
+	transition: transform-origin 0.75s, transform 0.75s; 
+}
+
+.photo img	/* définition de l'aspect de la photo */
+{
+	width: 100%;
+	height: 100%;
+	/* faire en sorte que l'image soit recadrée */
+	object-fit: cover;	
+	object-position: 50% 50%;
+}
+
+.photo:hover	/* action à effectuer au survol de la photo */
+{
+	/* pour que le zoom ne déborde pas sur les bords de la page */
+	transform-origin: right top; 
+	transform: scale(2, 2);
+}
+
+
+/***********************************************/
+/******************* PAGE **********************/
+/***********************************************/
+
+.cv	/* définition de l'affichage du contenu de la page */
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 2vmax;
+}
+
+/* définition de la taille et de l'affichage de la div comprenant l'image du crochet */
+.flexbox-illustration	
+{
+	display: flex;
+	align-items: flex-start;
+	/* nécessaire à ce que l'image reste en place lorsque la page est redimensionnée */
+	width: calc(100% + 37.5px);	
+}
+
+/* placement du crochet d'illustration lié à la bordure sous le sous-titre */
+.flexbox-illustration > img	
+{
+	z-index: 1;
+	width: 75px;
+	height: auto;
+	position: relative;
+	right: 37.5px;	/* déplacement vers la gauche */
+	bottom: 25px;	/* déplacement vers le haut */
+}
+
+/***********************************************/
+/**************** CONTENU DU CV ****************/
+/***********************************************/
+
+/* définition des conditions d'affichage et de taille de la div comportant le texte */
+.categorie	
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	right: 37.5px;
+}
+
+.sous-titre	/* définition de l'aspect des titres de catégorie et du trait en-dessous */
+{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom-style: solid;
+	border-color: #8FAADC;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+}
+
+.contenu	/* définition de l'affichage du texte contenu du CV */
+{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding-left: 3%;
+}
+
+.contenu img	/* définition des conditions d'affichage des logos */
+{
+	float: right;
+	width: 10%;
+	height: auto;
+	margin: 0% 25% 0% 0%; /*top right bottom left*/
+	transition: transform-origin 0.75s, transform 0.75s;
+}
+
+.contenu img:hover	/* définition des actions au survol des images (zoom) */
+{
+	transform-origin: left center;
+	transform: scale(2, 2);	
+}
+
+li		/* définition de l'aspect du texte des éléments de liste */
+{
+	font-style: italic;
+	padding-top: 0.5%;
+	padding-bottom: 0.1%;
+}
+
+ul p	/* définition du retrait du texte sous les éléments de liste */
+{
+	padding-left: 4%;
+	padding-bottom: 0.5%;
+}

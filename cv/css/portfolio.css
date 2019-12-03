@@ -1,0 +1,96 @@
+/***********************************************/
+/******************* PAGE **********************/
+/***********************************************/
+
+.grille		/* définition de l'affichage flexbox du contenu de la page */
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0.5%;
+}
+
+/***********************************************/
+/****************** VIDEOS *********************/
+/***********************************************/
+
+/* définition de l'aspect et des interactions entre les div et leur description */
+.video	
+{
+	width: 100%;
+	height: auto;
+	max-width: 560px;
+	max-height: 450px;
+	text-align: center;
+	padding: 0.5% 0.5% 0.5% 0.5%;	/*top right bottom left*/
+	box-sizing: border-box;
+	border: 2px solid #FFFFFF;
+	transition: all 0.25s ease-in-out;
+	transition-delay: 0.1s;
+}
+
+/* définition de l'aspect des vidéos et images intégrées */
+.video iframe, .video video, .video img		
+{
+	width: 100%;
+	/* height: 65%; */
+	box-sizing: border-box;
+	height: 292.5px;
+}
+
+/***********************************************/
+/*************** TEXTE PERMANENT ***************/
+/***********************************************/
+
+.titre	/* définition de l'aspect du titre du projet */
+{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.type	/* définition de l'aspect du type de projet */
+{
+	padding: 1%;
+	font-size: 1.12em;
+	font-weight: normal;
+	font-style: italic;
+	word-break: keep-all;
+}
+
+.fonctions	/* définition de l'aspect des postes sur lesquels j'ai travaillé */
+{
+	padding: 0 1% 1% 1%;	/*top right bottom left*/
+	font-size: 1em;
+	font-weight: normal;
+	word-break: keep-all;
+}
+
+/***********************************************/
+/***************** TEXTE CACHÉ *****************/
+/***********************************************/
+
+.distinctions	/* définition de l'aspect des éléments distinctifs du projet */
+{
+	font-style: normal;
+	text-align: left;
+	opacity: 0;
+	transform-origin: top;
+	transform: scale(1, 0);	/* cache la div tant qu'elle n'est pas survolée */
+	transition: 0.25s ease-in;
+	padding-left: 5%;
+}
+
+/* définition de l'aspect et actions des div "distinctions" au survol des div "video" */
+.video:hover > .distinctions	
+{
+	opacity: 1;
+	box-sizing: border-box;
+	transform: scale(1,1);
+}
+
+.video:hover	/* définition de l'aspect de la div "video" à son survol */
+{
+	box-sizing: border-box;
+	max-height: 500px;
+	border: 2px solid #8FAADC;
+}
