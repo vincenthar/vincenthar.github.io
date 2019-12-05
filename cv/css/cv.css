@@ -22,7 +22,7 @@
 	border-image: url(../images/bordure.svg) 10;	
 	margin-right: 5%;
 	/* pour que ça reste en place au chargement de la page */
-	transition: transform-origin 0.75s, transform 0.75s; 
+	transition: transform 0.75s; 
 }
 
 .photo img	/* définition de l'aspect de la photo */
@@ -111,7 +111,7 @@
 	width: 10%;
 	height: auto;
 	margin: 0% 25% 0% 0%; /*top right bottom left*/
-	transition: transform-origin 0.75s, transform 0.75s;
+	transition: transform 0.75s;
 }
 
 .contenu img:hover	/* définition des actions au survol des images (zoom) */
